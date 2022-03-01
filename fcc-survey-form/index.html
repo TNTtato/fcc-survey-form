@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main id="principal">
+        <header>
+            <h1 id="title">Survey Form</h1>
+            <p id="description">Fill the areas</p>
+        </header>
+        <section>
+            <form id="survey-form">
+                <div id="name-email-number">
+                    <div>
+                    <label class="centrar" for="name" id="name-label">Name: </label>
+                    <input class="centrar"
+                    type="text" 
+                    id="name"
+                    name="name"
+                    placeholder="Enter your name"
+                    required>
+                    </div>
+                    <div>
+                    <label class="centrar" for="email" id="email-label">Email: </label>
+                    <input class="centrar"
+                    type="email" 
+                    id="email"
+                    name="email"
+                    placeholder="Enter your email"
+                    required>
+                    </div>
+                    <div>
+                    <label class="centrar" for="number" id="number-label">Number: </label>
+                    <input class="centrar"
+                    type="number" 
+                    id="number"
+                    name="number"
+                    min="1000000000"
+                    max="9999999999"
+                    placeholder="Enter your cellphone"
+                    required>
+                    </div>
+                </div>
+                <div id="dropdown">
+                    <p>Select one of three options in the selecion bar</p>
+                    <select class="centrar"
+                    name="dropdown" 
+                    id="dropdown">
+                        <option value="option-1">Option 1</option>
+                        <option value="option-2">Option 2</option>
+                        <option value="option-3">Option 3</option>
+                    </select>
+                </div>
+                <div id="radio-butons">
+                    <p class="centrar-p-radio">Click one of the options</p>
+                    <div class="centrar-radio">
+                    <input 
+                    type="radio" 
+                    name="radio-butons" 
+                    value="radio-option-1"
+                    id="radio-option-1">
+                    <label for="radio-option-1">Option 1</label> 
+                    </div>
+                    <div class="centrar-radio">
+                    <input 
+                    type="radio" 
+                    id="radio-option-2"
+                    name="radio-butons" 
+                    value="radio-option-2">
+                    <label for="radio-option-2">Option 2</label> 
+                    </div>
+                    <div class="centrar-radio">
+                    <input 
+                    type="radio" 
+                    id="radio-option-3"
+                    name="radio-butons" 
+                    value="radio-option-3">
+                    <label for="radio-option-3">Option 3</label>
+                    </div>
+                </div>
+                <div id="checkboxes">
+                    <p class="centrar-radio">Choose as many...</p>
+                    <div class="centrar-radio">
+                    <input 
+                    type="checkbox"
+                    id="check-option-1" 
+                    name="checkboxes"
+                    value="check-option-1">
+                    <label for="check-option-1">Check Option 1</label>
+                    </div>
+                    <div class="centrar-radio">
+                    <input 
+                    type="checkbox" 
+                    name="checkboxes"
+                    id="check-option-2"
+                    value="check-option-2">
+                    <label for="check-option-2">Check Option 2</label>
+                    </div>
+                    <div class="centrar-radio">
+                    <input 
+                    type="checkbox" 
+                    name="checkboxes"
+                    id="check-option-3"
+                    value="check-option-3">
+                    <label for="check-option-3">Check Option 3</label>
+                    </div>
+                    <div class="centrar-radio">
+                    <input 
+                    type="checkbox" 
+                    name="checkboxes"
+                    id="check-option-4"
+                    value="check-option-4">
+                    <label for="check-option-4">Check Option 4</label>
+                    </div>
+                </div>
+                <textarea placeholder="Enter your comments" name="comments" class="centrar" id="comments"></textarea>
+                <button class="box-buton" type="submit" id="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+</html>
